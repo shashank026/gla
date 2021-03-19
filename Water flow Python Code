@@ -1,0 +1,13 @@
+t = int(input())
+Vtank = 3.14*5**2*10
+Vwater = 10*t
+if Vwater > Vtank:
+    print("Over Flow Condition")
+    print("Volume of Over flow", Vwater - Vtank)
+elif Vwater == Vtank:
+    print("Tank is filled")
+else:
+    print("Uner Flow")
+    HeightT = Vwater/(3.14*5**2)
+    HeightR = 10 - HeightT
+    print("Filled Height: {}\nRemaining Height: {}".format(HeightT, HeightR))
